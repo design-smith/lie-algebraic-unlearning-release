@@ -37,6 +37,10 @@ set a Colab secret `HF_TOKEN` with access to `meta-llama/Llama-3.2-1B`, then `%r
 It writes `experiment1_results.csv` (drop into `results/`) plus a scatter. `SMOKE=1 python
 h1_llama.py` validates the full code path on CPU in ~2 minutes without the gated download.
 
+## Citation
+
+Archived at Zenodo: [doi:10.5281/zenodo.21267659](https://doi.org/10.5281/zenodo.21267659).
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

@@ -54,12 +54,14 @@ submission_packet/
 ## Next steps (your plan; not done here - each is yours to drive)
 
 1. **DONE** - `h1_llama.py` consolidated and verified (the only real-risk step).
-2. **Repo up, public.** The five Section-A manuscript edits (conclusion, 6.1 lead-out, n=144/113,
-   orderings note, rho-magnitude sentence) and both `[repo URL]` placeholders are **already in the
-   manuscript** and flowed into `paper.tex`. The live repo is currently PRIVATE at
-   github.com/design-smith/lie-algebraic-unlearning; flip it public when ready (bucket 1 here is
-   the clean flat layout to publish).
-3. **Compile.** `cd arxiv && pdflatex paper.tex` (twice for refs/labels), read the PDF end to end.
+2. **DONE - repo public + DOI.** This packet is its own public repo at
+   github.com/design-smith/lie-algebraic-unlearning-release, archived at Zenodo
+   (doi:10.5281/zenodo.21267659). The paper cites the DOI (title-page footnote) plus that repo;
+   both `[repo URL]` mentions were moved off the old private repo. (The original
+   design-smith/lie-algebraic-unlearning stays private and is no longer referenced by the paper.)
+3. **DONE - compiled.** `arxiv/paper.pdf` (42 pp) was built with tectonic 0.16.9 and cites its own
+   DOI on the title page. Recompile after edits with `tectonic -X compile paper.tex` (or
+   `pdflatex paper.tex`, twice); give it a final end-to-end read.
 4. **arXiv.** Upload `arxiv.tar.gz`. **Prerequisite (longest lead-time, start now):** request a
    **cs.LG endorsement** so the upload is not blocked.
 5. **Workshop.** Build `workshop/workshop.tex` on the chosen venue's template from the compiled
