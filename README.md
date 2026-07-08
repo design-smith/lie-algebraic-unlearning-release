@@ -43,7 +43,7 @@ submission_packet/
   formatted list (from the manuscript), and body citations are author-year text. `references.bib`
   ships alongside as the machine-readable version (reuse it for the workshop cut or switch to
   `\bibliography{references}` + `\citep` later if a venue requires it).
-- Author line is `Nathan Gandawa \\ nathangandawa@gmail.com` - edit affiliation as needed.
+- Author line is `Nathan Zeke Gandawa \\ nathangandawa@gmail.com` - edit affiliation as needed.
 - Section symbols (U+00A7) render via `inputenc utf8`; the preamble pandoc emitted is complete
   (amsmath, amssymb, graphicx, booktabs, longtable, hyperref, bookmark).
 - Known safe-but-improvable: the 7 figures use the manuscript's bold "Figure N. ..." caption
