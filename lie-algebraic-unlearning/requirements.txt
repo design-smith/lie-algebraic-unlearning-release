@@ -1,0 +1,18 @@
+# Pinned environment. Python 3.12.
+#
+# torch/torchvision are CPU builds; install them from the PyTorch CPU wheel index first,
+# then the rest:
+#
+#   pip install torch==2.12.1 torchvision==0.27.1 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+#
+# Figure reproduction (make_figures.py) needs only torch/torchvision/numpy/scipy/matplotlib.
+# transformers/peft/accelerate are for re-running the H1 experiment (h1_llama.py, GPU).
+torch==2.12.1
+torchvision==0.27.1
+numpy==2.5.1
+scipy==1.18.0
+matplotlib==3.11.0
+transformers==5.13.0
+peft==0.19.1
+accelerate==1.14.0

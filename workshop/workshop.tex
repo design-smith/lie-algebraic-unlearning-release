@@ -1,0 +1,42 @@
+% ============================================================================
+% WORKSHOP SUBMISSION - SET ASIDE (build last, on the venue's own template)
+% ============================================================================
+%
+% This file is intentionally a stub. The 4-8 page workshop cut must be built on
+% the CHOSEN VENUE'S template (.sty/.cls), which does not exist until you pick
+% the venue at go-time. Do not invent a template here: NeurIPS/ICML/ICLR
+% workshops each ship their own style file and page limit, and submitting on the
+% wrong one is a desk-reject.
+%
+% ----------------------------------------------------------------------------
+% WHEN YOU PICK THE VENUE, assemble in ~2 hours from material already written:
+%
+%   \documentclass{<venue_style>}          % from the venue's kit
+%   \usepackage{amsmath,amssymb,graphicx,booktabs}
+%   \bibliographystyle{<venue_bst>}
+%
+%   Title / author            <- reuse from ../arxiv/paper.tex
+%   Abstract                  <- trim the arxiv abstract to ~150 words
+%
+%   Content to KEEP (this is the 4-8 page story):
+%     1. Framing: additive PEFT is order-blind; recast sequential adaptation as
+%        non-commutative composition of exp(A)W updates.   [Intro, ~0.75 pg]
+%     2. Theorem 1 (composition bound) + the exact low-rank exponential adapter.
+%        State the theorem, cite Appendix B for the proof (proof does NOT fit).
+%        [Method + Theorem, ~1.5 pg]
+%     3. Figure 3 (Exp_H1.png) + the H1 result paragraph: rho=0.25 (p=2.6e-3),
+%        within-condition + magnitude-controlled, per-layer distributed.
+%        [Result, ~1 pg]  <- this is the empirical anchor; keep it.
+%     4. Limitations: proxy metric not TOFU truth-ratio; full harness pending.
+%        [~0.5 pg]
+%
+%   Content to CUT (points to the arXiv version for it):
+%     - Related-work table (Table 2), matrix study (Table 1, Fig 1a-d), toy MLP
+%       (Fig 2a-b), Appendices A/B, the full experimental-design section.
+%
+%   Figures available in this folder's sibling ../arxiv/: Exp_H1.png is the one
+%   to include. references.bib is ../arxiv/references.bib (copy it in).
+%
+% Prerequisite (longest lead-time, start NOW, not a file): request a cs.LG arXiv
+% endorsement so the arXiv upload in ../arxiv/ is not blocked when ready.
+% ============================================================================
