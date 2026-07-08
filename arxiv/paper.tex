@@ -72,7 +72,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Lie Algebraic Optimization for Continual Learning and Targeted Unlearning in Neural Networks}
+\title{Lie Algebraic Optimization for Continual Learning and Targeted Unlearning in Neural Networks\thanks{Code, data, seeds, and the source of this paper are archived at \href{https://doi.org/10.5281/zenodo.21267659}{doi:10.5281/zenodo.21267659}, mirrored at \url{https://github.com/design-smith/lie-algebraic-unlearning-release}.}}
 \author{Nathan Gandawa\\ \texttt{nathan.gandawa@techtorch.io}}
 \date{}
 
@@ -90,7 +90,7 @@ We make three contributions. First, a composition analysis: we bound the error o
 
 Matrix-level and small-network experiments confirm the geometry, with Gram deviation at numerical precision against roughly \(10^{-2}\) for additive updates, and the composition bound, with second-order BCH accumulation \(27\) to \(2200\) times more accurate than naive generator addition across the norms tested. The central hypothesis, that commutator magnitude predicts sequential interference in transformer unlearning, is stated so that it can be refuted; a first test on Llama-3.2-1B supports it, with the normalized commutator predicting cumulative interference across sequential unlearning windows (Spearman \(\rho=0.25\), \(p=2.6\times10^{-3}\), holding within conditions and after controlling for update magnitude, condition, and pair gap), and the full benchmark test through a standard unlearning harness is the empirical question that remains. We do not claim to eliminate catastrophic forgetting or to guarantee semantic preservation: geometry preservation is a parameter-space property, not a functional one.
 
-\emph{Code, configurations, seeds, and raw results: https://github.com/design-smith/lie-algebraic-unlearning}
+\emph{Code, configurations, seeds, and raw results are archived at https://doi.org/10.5281/zenodo.21267659 and mirrored at https://github.com/design-smith/lie-algebraic-unlearning-release}
 
 \end{abstract}
 
@@ -988,7 +988,7 @@ The established evidence is deliberately scoped: geometry preservation and secon
 
 \section{Reproducibility}\label{reproducibility}
 
-All experiments are produced by a single configuration-driven pipeline, and every figure regenerates from raw logs with one command (\texttt{python\ make\_figures.py}). Code, configurations, seeds, and CSV logs are available at https://github.com/design-smith/lie-algebraic-unlearning.
+All experiments are produced by a single configuration-driven pipeline, and every figure regenerates from raw logs with one command (\texttt{python\ make\_figures.py}). Code, configurations, seeds, and CSV logs are archived at https://doi.org/10.5281/zenodo.21267659 and mirrored at https://github.com/design-smith/lie-algebraic-unlearning-release.
 
 \section{References}\label{references}
 

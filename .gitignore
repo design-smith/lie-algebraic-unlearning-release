@@ -5,7 +5,6 @@ data/
 *.aux
 *.log
 *.out
-*.pdf
 *.bbl
 *.blg
 .DS_Store
